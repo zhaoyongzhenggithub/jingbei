@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taoshui">
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/item"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/item"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.jingbei.view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.jingbei.view.Taoshui">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.MeNotLogin"
+            android:label="未登录">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.MeChangeInfo"
+            android:label="修改信息"/>
+        <activity android:name="com.example.jingbei.view.MeLogin"
+            android:label="个人中心"/>
+        <activity android:name="com.example.jingbei.view.MeRegiste"
+            android:label="注册">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.MeSignup"
+            android:label="登陆"/>
+        <activity android:name="com.example.jingbei.view.TestActivity"
+            android:label="注册数据库测试">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.MeMyInfo"
+        android:label="我的信息"/>
+        <activity android:name="com.example.jingbei.view.CarActivity"
+            android:label="购物车">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.GoodsSearch"
+            android:label="商品查询">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.GoodsDetail"
+            android:label="商品详情">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.GoodsInfoList"
+            android:label="商品列表">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.OrderActivity"
+            android:label="我的订单">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.GoodsRecently"
+            android:label="我的足迹">
+
+        </activity>
+        <activity android:name="com.example.jingbei.view.Weather" >
+
+        </activity>
+
+    </application>
+
+</manifest>

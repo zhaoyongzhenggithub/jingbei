@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:text="订单1"
+        android:id="@+id/hubo_shoppingorderlistitemsecond_textview_ordername"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="77826"
+        android:textSize="17dp"
+        android:textColor="#EC0C00"
+        android:id="@+id/hubo_shoppingorderlistitemsecond_textview_price"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统时间"
+        android:textSize="17dp"
+        android:id="@+id/hubo_shoppingorderlistitemsecond_textview_systemtime"
+        />
+    </LinearLayout>
+    <Button
+        android:id="@+id/hubo_shoppingorderlistitemfirst_button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/shj_button_layout_1"
+        android:onClick="orderdelete"
+        android:text="删除"
+        />
+
+</LinearLayout>
+</LinearLayout>

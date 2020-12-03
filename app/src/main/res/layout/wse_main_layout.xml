@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dzp_main_layout_linear"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#66B3FF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:weightSum="1"
+            >
+
+            <EditText
+                android:id="@+id/dzp_main_layout_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:background="@drawable/edittext_layout_1"
+                android:hint="请输入搜索的关键字"
+                android:layout_marginLeft="30dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="beginQuery"
+                android:src="@drawable/findview" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="6">
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="80dp"
+        android:numColumns="2">
+
+    </GridView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E8E8D0">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="54dp"
+            android:src="@drawable/main"
+            android:layout_weight="0.25" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="54dp"
+            android:src="@drawable/product"
+            android:onClick="button_mainlayout_Weather"
+            android:layout_weight="0.25" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="54dp"
+            android:src="@drawable/buycar"
+            android:onClick="buttom_mainlayout_Caractivity"
+            android:layout_weight="0.25" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="54dp"
+            android:src="@drawable/me"
+            android:onClick="button_mainlayout_MeNotLogin"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+</LinearLayout>
